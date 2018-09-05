@@ -3,6 +3,7 @@ FROM registry.access.redhat.com/devtools/go-toolset-7-rhel7
 WORKDIR /go/src/github.com/lomik/carbon-clickhouse
 COPY . .
 
+USER root
 RUN yum-config-manager --enable rhel-server-rhscl-7-rpms && \
     yum-config-manager --enable rhel-7-server-optional-rpms && \
     yum install -y golang make ca-certificates
