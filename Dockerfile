@@ -1,4 +1,4 @@
-FROM devtools/go-toolset-7-rhel7
+FROM registry.access.redhat.com/devtools/go-toolset-7-rhel7
 
 WORKDIR /go/src/github.com/lomik/carbon-clickhouse
 COPY . .
